@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NASA Data</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">NASA Near-Earth Objects and Meteorite Landings Data</h1>
+        <h2>NeoWs Data</h2>
+        {{ neows_data | safe }}
+        <h2>Meteorite Landings Data</h2>
+        {{ meteorite_data | safe }}
+        <h2>Visualizations</h2>
+        <img src="/static/potentially_hazardous_asteroids.png" alt="Potentially Hazardous Asteroids">
+        <img src="/static/miss_distance_vs_magnitude.png" alt="Miss Distance vs Magnitude">
+    </div>
+</body>
+</html>
